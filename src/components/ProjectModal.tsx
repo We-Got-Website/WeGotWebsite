@@ -49,29 +49,30 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
     <AnimatePresence>
       {isOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black/80 backdrop-blur-sm"
             onClick={onClose}
           />
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-lg bg-[#0a101f] border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[90vh]"
+            className="relative w-full max-w-lg border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-10 flex flex-col max-h-[90vh]"
+            style={{ background: 'linear-gradient(90deg, rgba(15, 11, 92, 1) 0%, rgba(9, 9, 88, 1) 74%)' }}
           >
-            <button 
+            <button
               onClick={onClose}
               className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-20 bg-black/20 rounded-full p-2"
             >
               <X className="w-5 h-5" />
             </button>
-            
+
             <div className="p-6 md:p-8 overflow-y-auto" style={{ scrollbarWidth: 'thin' }}>
               {isSuccess ? (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   className="py-12 flex flex-col items-center text-center rotate-0"
@@ -85,26 +86,26 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
               ) : (
                 <>
                   <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-8">Tell Us About Your Project</h2>
-                  
+
                   <form className="space-y-5" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           name="name"
-                          required 
+                          required
                           placeholder="John Doe"
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all"
                         />
                       </div>
-                      
+
                       <div>
                         <label className="block text-sm font-medium text-gray-300 mb-2">Email Address *</label>
-                        <input 
-                          type="email" 
+                        <input
+                          type="email"
                           name="email"
-                          required 
+                          required
                           placeholder="john@example.com"
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all"
                         />
@@ -114,32 +115,32 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-sm font-medium text-gray-300 mb-2">Phone Number *</label>
-                        <input 
-                          type="tel" 
+                        <input
+                          type="tel"
                           name="phone"
-                          required 
+                          required
                           placeholder="+1 (555) 000-0000"
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all"
                         />
                       </div>
-                      
+
                       <div>
                         <label className="block text-sm font-medium text-gray-300 mb-2">Company / Organisation</label>
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           name="company"
                           placeholder="Optional"
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all"
                         />
                       </div>
                     </div>
-                    
+
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">Industry *</label>
                       <div className="relative">
-                        <select 
+                        <select
                           name="industry"
-                          required 
+                          required
                           defaultValue=""
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all appearance-none"
                         >
@@ -163,9 +164,9 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">Type of Website Required *</label>
                       <div className="relative">
-                        <select 
+                        <select
                           name="website_type"
-                          required 
+                          required
                           defaultValue=""
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all appearance-none"
                         >
@@ -186,9 +187,9 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">Project Timeline *</label>
                       <div className="relative">
-                        <select 
+                        <select
                           name="timeline"
-                          required 
+                          required
                           defaultValue=""
                           className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all appearance-none"
                         >
@@ -203,20 +204,20 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
                         </div>
                       </div>
                     </div>
-                    
+
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">Project Details *</label>
-                      <textarea 
+                      <textarea
                         name="details"
-                        required 
+                        required
                         rows={4}
                         placeholder="Tell us what you're looking to build..."
                         className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] transition-all resize-none"
                       />
                     </div>
-                    
+
                     <div className="pt-4">
-                      <button 
+                      <button
                         type="submit"
                         disabled={isSubmitting}
                         className="w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] disabled:bg-gray-600 disabled:cursor-not-allowed text-black font-semibold py-3 md:py-4 rounded-lg transition-colors flex justify-center items-center text-base md:text-lg gap-2"

@@ -16,7 +16,7 @@ export default function FeatureShowcase() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Main large card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -25,20 +25,20 @@ export default function FeatureShowcase() {
             <div className="mb-8 bg-black/40 rounded-xl p-6 font-mono text-sm border border-white/10 overflow-x-auto">
               <pre className="text-gray-300">
                 <code>
-                  <span className="text-pink-500">import</span> {'{'} useState, useEffect {'}'} <span className="text-pink-500">from</span> <span className="text-green-400">'react'</span>;<br/>
-                  <span className="text-pink-500">import</span> {'{'} fetchMetrics {'}'} <span className="text-pink-500">from</span> <span className="text-green-400">'@/services/api'</span>;<br/>
-                  <br/>
-                  <span className="text-pink-500">export function</span> <span className="text-blue-400">useClientDashboard</span>(clientId: <span className="text-yellow-300">string</span>) {'{'}<br/>
-                  {'  '}<span className="text-pink-500">const</span> [metrics, setMetrics] = <span className="text-blue-300">useState</span>&lt;<span className="text-yellow-300">Metrics</span> | <span className="text-pink-500">null</span>&gt;(<span className="text-pink-500">null</span>);<br/>
-                  {'  '}<span className="text-pink-500">const</span> [isLoading, setIsLoading] = <span className="text-blue-300">useState</span>(<span className="text-pink-500">true</span>);<br/>
-                  <br/>
-                  {'  '}<span className="text-blue-300">useEffect</span>(() =&gt; {'{'}<br/>
-                  {'    '}<span className="text-blue-300">fetchMetrics</span>(clientId)<br/>
-                  {'      '}.<span className="text-blue-300">then</span>(data =&gt; setMetrics(data))<br/>
-                  {'      '}.<span className="text-blue-300">finally</span>(() =&gt; setIsLoading(<span className="text-pink-500">false</span>));<br/>
-                  {'  '}, [clientId]);<br/>
-                  <br/>
-                  {'  '}<span className="text-pink-500">return</span> {'{'} metrics, isLoading {'}'};<br/>
+                  <span className="text-pink-500">import</span> {'{'} useState, useEffect {'}'} <span className="text-pink-500">from</span> <span className="text-green-400">'react'</span>;<br />
+                  <span className="text-pink-500">import</span> {'{'} fetchMetrics {'}'} <span className="text-pink-500">from</span> <span className="text-green-400">'@/services/api'</span>;<br />
+                  <br />
+                  <span className="text-pink-500">export function</span> <span className="text-blue-400">useClientDashboard</span>(clientId: <span className="text-yellow-300">string</span>) {'{'}<br />
+                  {'  '}<span className="text-pink-500">const</span> [metrics, setMetrics] = <span className="text-blue-300">useState</span>&lt;<span className="text-yellow-300">Metrics</span> | <span className="text-pink-500">null</span>&gt;(<span className="text-pink-500">null</span>);<br />
+                  {'  '}<span className="text-pink-500">const</span> [isLoading, setIsLoading] = <span className="text-blue-300">useState</span>(<span className="text-pink-500">true</span>);<br />
+                  <br />
+                  {'  '}<span className="text-blue-300">useEffect</span>(() =&gt; {'{'}<br />
+                  {'    '}<span className="text-blue-300">fetchMetrics</span>(clientId)<br />
+                  {'      '}.<span className="text-blue-300">then</span>(data =&gt; setMetrics(data))<br />
+                  {'      '}.<span className="text-blue-300">finally</span>(() =&gt; setIsLoading(<span className="text-pink-500">false</span>));<br />
+                  {'  '}, [clientId]);<br />
+                  <br />
+                  {'  '}<span className="text-pink-500">return</span> {'{'} metrics, isLoading {'}'};<br />
                   {'}'}
                 </code>
               </pre>
@@ -52,7 +52,7 @@ export default function FeatureShowcase() {
           </motion.div>
 
           {/* Radar card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -65,7 +65,7 @@ export default function FeatureShowcase() {
                 <div className="absolute inset-0 rounded-full border border-primary/20 scale-75"></div>
                 <div className="absolute inset-0 rounded-full border border-primary/30 scale-50"></div>
                 <div className="absolute top-1/2 left-1/2 w-1/2 h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-primary origin-left animate-[spin_4s_linear_infinite]"></div>
-                <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-primary rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_15px_rgba(46,49,225,0.8)]"></div>
+                <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-primary rounded-full -translate-x-1/2 -translate-y-1/2 shadow-[0_0_15px_rgba(255,255,255,0.8)]"></div>
               </div>
             </div>
             <div className="relative z-10">
@@ -77,7 +77,7 @@ export default function FeatureShowcase() {
           </motion.div>
 
           {/* Encryption card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -98,7 +98,7 @@ export default function FeatureShowcase() {
           </motion.div>
 
           {/* Integration card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -113,7 +113,7 @@ export default function FeatureShowcase() {
                 <div className="w-12 h-12 rounded-full bg-white/10"></div>
                 <div className="w-12 h-12 rounded-full bg-white/10"></div>
                 <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] opacity-100 flex items-center justify-center">
-                  <div className="w-6 h-6 bg-black rounded-sm"></div>
+                  <div className="w-6 h-6 bg-gray-900 rounded-sm"></div>
                 </div>
                 <div className="w-12 h-12 rounded-full bg-white/10"></div>
               </div>
@@ -127,7 +127,7 @@ export default function FeatureShowcase() {
           </motion.div>
 
           {/* Access card */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

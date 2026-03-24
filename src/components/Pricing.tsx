@@ -168,7 +168,10 @@ export default function Pricing({ onOpenProjectModal }: PricingProps) {
               </ul>
             </div>
 
-            <button className="w-full bg-transparent border border-white/20 hover:bg-white/10 text-white py-3 rounded-full font-medium transition-colors">
+            <button
+              onClick={onOpenProjectModal}
+              className="w-full bg-transparent border border-white/20 hover:bg-white/10 text-white py-3 rounded-full font-medium transition-colors"
+            >
               TALK TO SALES
             </button>
           </motion.div>
