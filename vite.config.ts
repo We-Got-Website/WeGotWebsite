@@ -4,6 +4,6 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [tailwindcss(), react()],
   base: '/WeGotWebsite/',
 })
