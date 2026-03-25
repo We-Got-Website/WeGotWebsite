@@ -5,5 +5,5 @@ import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/wegotwebsite/', // 👈 Replace 'your-repo-name' with your actual repo name!
+  base: '/WeGotWebsite/', // 👈 Replace 'your-repo-name' with your actual repo name!
 })
