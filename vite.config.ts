@@ -22,3 +22,7 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+export default defineConfig({
+  plugins: [react()],
+  base: '/wegotwebsite/', // 👈 Replace 'your-repo-name' with your actual repo name!
+})
