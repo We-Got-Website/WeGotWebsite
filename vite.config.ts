@@ -5,5 +5,5 @@ import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig({
   plugins: [tailwindcss(), react()],
-  base: '/WeGotWebsite/',
+  base: '/',
 })
