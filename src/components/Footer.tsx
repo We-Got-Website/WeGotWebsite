@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Twitter, Linkedin, Github, Instagram } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { scrollToTop } from '../utils/scroll';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   const location = useLocation();
@@ -17,7 +18,7 @@ export default function Footer() {
                 scrollToTop();
               }
             }} className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" alt="WGW Logo" className="h-30 object-contain" />
+              <img src={logo} alt="WGW Logo" className="h-30 object-contain" />
             </Link>
             <p className="text-gray-400 mb-8 max-w-sm">
               Our framework component is built to handle scaling demands with agility. Lightning-fast performance is our promise.

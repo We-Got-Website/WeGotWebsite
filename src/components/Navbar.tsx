@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { scrollToSection, scrollToTop } from '../utils/scroll';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function Navbar() {
             <a href="/" onClick={(e) => {
               if (location.pathname === '/') handleScrollToTop(e);
             }} className="flex items-center gap-3 cursor-pointer">
-              <img src="/logo.png" alt="WGW Logo" className="h-30 object-contain" />
+              <img src={logo} alt="WGW Logo" className="h-30 object-contain" />
             </a>
           </div>
 
