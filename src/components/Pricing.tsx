@@ -31,7 +31,7 @@ export default function Pricing({ onOpenProjectModal }: PricingProps) {
               <h4 className="text-2xl font-bold text-white mb-4">The Launchpad</h4>
               <p className="text-gray-400 text-sm mb-8 h-10">Perfect for startups needing a high-impact landing page.</p>
               <div className="flex items-end justify-center gap-1 mb-2">
-                <span className="text-5xl font-bold text-white">$1,200</span>
+                <span className="text-5xl font-bold text-white">$499</span>
                 <span className="text-[var(--color-primary)] font-bold text-2xl mb-1">+</span>
               </div>
               <p className="text-gray-500 text-sm">Project-based</p>
@@ -87,7 +87,7 @@ export default function Pricing({ onOpenProjectModal }: PricingProps) {
               <h4 className="text-2xl font-bold text-white mb-4">The Growth Suite</h4>
               <p className="text-gray-400 text-sm mb-8 h-10">Full multi-page site with CMS and SEO integration.</p>
               <div className="flex items-end justify-center gap-1 mb-2">
-                <span className="text-5xl font-bold text-white">$3,500</span>
+                <span className="text-5xl font-bold text-white">$1,299</span>
                 <span className="text-[var(--color-primary)] font-bold text-2xl mb-1">+</span>
               </div>
               <p className="text-gray-500 text-sm">Project-based</p>
