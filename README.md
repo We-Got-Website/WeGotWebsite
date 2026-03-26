@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1200" alt="WeGotWebsites Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" alt="WeGotWebsites Banner" src="https://media.licdn.com/dms/image/v2/D4D0BAQGxrvbgMuctPw/company-logo_200_200/B4DZzyXdJCGsAI-/0/1773592761823?e=1776297600&v=beta&t=G8pwopepRvRZIgo8rPgLfF7NFSztb4ogilevx2JbU2Y" />
 
   # 🚀 WeGotWebsites
   ### Modern, High-Performance Digital Agency Portfolio

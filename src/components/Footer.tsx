@@ -24,13 +24,13 @@ export default function Footer() {
               Our framework component is built to handle scaling demands with agility. Lightning-fast performance is our promise.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
+              <a href="#UnderProcess" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/company/we-got-website" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://github.com/Nadeem-Vibes" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
+              <a href="https://github.com/We-Got-Website" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
               <a href="https://www.instagram.com/wegotwebsite/" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
