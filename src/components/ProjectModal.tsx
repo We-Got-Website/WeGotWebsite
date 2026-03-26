@@ -17,7 +17,7 @@ export default function ProjectModal({ isOpen, onClose }: ProjectModalProps) {
 
     const formData = new FormData(e.currentTarget);
     // You can get your own access key from https://web3forms.com/
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "e9832359-c65e-4e9b-8fba-12c3923bf787");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
